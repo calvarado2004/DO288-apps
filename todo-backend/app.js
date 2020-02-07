@@ -19,8 +19,6 @@ var server = restify.createServer()
 controller.context(server, '/todo/api', model); 
 serverinfo.context(server, '/todo/api');
 
-process.EventEmitter = require('events').EventEmitter
-const zetta = require('zetta')
 
 var port = process.env.PORT || 8080;
 server.listen(port, function (err) {
